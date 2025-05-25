@@ -3,11 +3,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # твоя основная ветка
+      - master # основная ветка
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # даём права на запись
     steps:
       - name: Checkout
         uses: actions/checkout@v3
