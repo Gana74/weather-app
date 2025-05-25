@@ -1,0 +1,48 @@
+/* Базовые стили для всего приложения */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6fa;
+  color: #222;
+}
+
+button {
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1565c0;
+}
+
+input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+  .login-container,
+  .weather-container {
+    max-width: 95vw;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
